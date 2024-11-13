@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profesional Deportivo</title>
+    <style>
+        /* General */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f4f4f9;
+            line-height: 1.6;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #004aad;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        /* Secciones */
+        section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #004aad;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        #inicio p {
+            font-size: 1.1em;
+            line-height: 1.7;
+        }
+
+        /* Botón de cálculo en Huella de Carbono */
+        #huella button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #004aad;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #huella button:hover {
+            background-color: #003080;
+        }
+
+        #resultadoHuella {
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+            margin-top: 15px;
+        }
+
+        /* Portafolio */
+        #portafolio .trabajo {
+            background-color: #e6f0ff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 5px solid #004aad;
+            border-radius: 5px;
+        }
+
+        #portafolio .trabajo h3 {
+            color: #004aad;
+            margin-bottom: 10px;
+        }
+
+        #portafolio .trabajo p {
+            margin-bottom: 5px;
+        }
+
+        #portafolio .trabajo a {
+            color: #004aad;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        #portafolio .trabajo a:hover {
+            color: #002a60;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #004aad;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9em;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            header nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header nav ul li {
+                margin: 10px 0;
+            }
+
+            section {
+                margin: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Perfil Profesional en el Sector Deportivo</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#huella">Huella de Carbono</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+            </ul> 
+        </nav>
+    </header>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio">
+        <h2>Bienvenido a mi Página Profesional</h2>
+        <p>Mi nombre es [Tu Nombre Completo]. Me especializo en la gestión de negocios deportivos, con un enfoque en los aspectos financieros, de marketing y en los negocios internacionales. Mi objetivo es convertirme en un profesional integral en el sector deportivo, capaz de gestionar de manera eficiente las organizaciones deportivas y contribuir al desarrollo sostenible de la industria, generando un impacto positivo en la sociedad.</p>
+        <p>Mis intereses incluyen el desarrollo de estrategias para la sostenibilidad en el deporte y la gestión eficiente de recursos dentro de la industria deportiva.</p>
+    </section>
+
+    <!-- Sección de Huella de Carbono -->
+    <section id="huella">
+        <h2>Huella de Carbono</h2>
+        <p>Según una estimación personal, mi huella de carbono es de aproximadamente [cantidad] toneladas de CO2 al año. Este cálculo fue obtenido utilizando una calculadora en línea.</p>
+        <p>Para reducir mi impacto ambiental, implemento acciones como la reducción de viajes innecesarios, el uso de medios de transporte sostenibles, y la minimización de mi consumo energético. Comprometido con el desarrollo sostenible, busco promover prácticas ecológicas en las organizaciones deportivas.</p>
+        <button onclick="calcularHuella()">Calcular mi huella de carbono</button>
+        <p id="resultadoHuella"></p>
+    </section>
+
+    <!-- Sección de Portafolio -->
+    <section id="portafolio">
+        <h2>Portafolio</h2>
+        <p>Aquí presento algunos de los proyectos en los que he trabajado:</p>
+        <div class="trabajo">
+            <h3>Proyecto 1: Estrategia de Marketing Deportivo</h3>
+            <p>Implementación de una estrategia de marketing digital para un club deportivo. <a href="#">Ver detalles</a></p>
+        </div>
+        <div class="trabajo">
+            <h3>Proyecto 2: Gestión Financiera en Organizaciones Deportivas</h3>
+            <p>Análisis financiero y propuestas de mejora para una liga deportiva. <a href="#">Ver detalles</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 [Tu Nombre]. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript para el botón de cálculo de huella de carbono -->
+    <script>
+        function calcularHuella() {
+            document.getElementById('resultadoHuella').textContent = 'Esta funcionalidad está en desarrollo.';
+        }
+    </script>
+</body>
+</html>
